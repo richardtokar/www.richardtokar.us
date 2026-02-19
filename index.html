@@ -8,8 +8,6 @@
     <meta name="keywords" content="Richard Tokar, Computer Technology Teacher, IT, Networking, Cybersecurity, Education, Work Experience, Tech Skills, LinkedIn, GitHub" />
     <meta name="author" content="Richard Tokar" />
     <link rel="canonical" href="https://www.richardtokar.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
       * {
         box-sizing: border-box;
@@ -17,27 +15,27 @@
         padding: 0;
       }
       body {
-        font-family: 'Roboto', sans-serif;
-        /* Darker, tech-inspired background */
-        background-color: #1a1a2e; /* Very dark blue-purple */
-        color: #e0e0e0; /* Light gray for text */
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f3f5fa;
+        color: #1f2937;
         line-height: 1.6;
-        padding: 40px 0; /* Add overall vertical padding */
+        padding: 40px 0;
       }
       .container {
         max-width: 1200px;
         margin: auto;
         padding: 20px;
         display: flex;
+        visibility: visible;
+        opacity: 1;
         flex-wrap: wrap;
-        gap: 30px; /* Increased gap for more breathing room */
+        gap: 30px;
       }
       .left-column, .right-column {
-        /* Slightly lighter dark background for content cards */
-        background: #24273f;
-        border-radius: 10px; /* Slightly more rounded corners */
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Softer, darker shadow */
-        padding: 30px; /* Increased padding inside sections */
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(15, 23, 42, 0.12);
+        padding: 30px;
       }
       .left-column {
         flex: 1 1 30%;
@@ -47,18 +45,18 @@
       }
       .profile-img {
         width: 100%;
-        border-radius: 8px; /* Maintain consistent border-radius */
-        margin-bottom: 20px; /* Add space below image */
+        border-radius: 8px;
+        margin-bottom: 20px;
       }
       h2.section-title {
-        color: #00b3b3; /* Brighter teal accent */
-        border-bottom: 2px solid #4a4e69; /* Muted, complementary border color */
-        margin-bottom: 20px; /* More space below titles */
+        color: #0f766e;
+        border-bottom: 2px solid #d0d7e2;
+        margin-bottom: 20px;
         padding-bottom: 10px;
-        font-size: 1.8em; /* Slightly larger titles */
+        font-size: 1.8em;
       }
       h3 {
-          color: #00e6e6; /* Brighter teal for subheadings */
+          color: #0f766e;
           margin-bottom: 8px;
       }
       p {
@@ -68,41 +66,41 @@
         margin-bottom: 15px;
       }
       .info-item i, .section-title i {
-          color: #00b3b3; /* Ensure icons match accent color */
+          color: #0f766e;
           margin-right: 10px;
       }
       a {
-          color: #00e6e6; /* Bright teal for links */
+          color: #0f766e;
           text-decoration: none;
       }
       a:hover {
-          color: #79f2f2; /* Lighter teal on hover */
+          color: #115e59;
           text-decoration: underline;
       }
       footer {
-        background-color: #008080; /* Keep the original teal for footer */
+        background-color: #0f766e;
         color: #fff;
         text-align: center;
-        padding: 25px 0; /* Slightly more padding for footer */
-        margin-top: 50px; /* More space above footer */
+        padding: 25px 0;
+        margin-top: 50px;
       }
       .footer-links a {
         color: #fff;
         text-decoration: none;
-        margin: 0 20px; /* More spacing for footer links */
+        margin: 0 20px;
         display: inline-block;
-        transition: transform 0.3s ease, color 0.3s ease; /* Smoother transitions */
+        transition: transform 0.3s ease, color 0.3s ease;
         font-size: 1.1em;
       }
       .footer-links a:hover {
-        transform: translateY(-3px) scale(1.05); /* Lift and slightly enlarge on hover */
-        color: #79f2f2; /* Lighter color on hover */
+        transform: translateY(-3px) scale(1.05);
+        color: #ccfbf1;
       }
 
       /* Responsive adjustments */
       @media (max-width: 768px) {
         .left-column, .right-column {
-          flex: 1 1 100%; /* Stack columns on smaller screens */
+          flex: 1 1 100%;
           padding: 20px;
         }
         .container {
@@ -111,6 +109,27 @@
         }
         h2.section-title {
             font-size: 1.6em;
+        }
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+          color: #000000;
+          padding: 0;
+        }
+        .left-column, .right-column {
+          box-shadow: none;
+          border: 1px solid #d1d5db;
+        }
+        footer {
+          background: #ffffff;
+          color: #000000;
+          border-top: 1px solid #d1d5db;
+        }
+        .footer-links a,
+        a {
+          color: #000000;
         }
       }
     </style>
